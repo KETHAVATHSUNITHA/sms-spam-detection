@@ -1,0 +1,29 @@
+
+    body {
+        background-color: #8ab9d7; 
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    .footer-right
+.footer-overview {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    
+    
+}
+
+.footer-overview div {
+    flex: 1;
+    text-align: center;
+    
+}
+
+footer p {
+    text-align: center;
+    margin-top: 10px;
+    
+}

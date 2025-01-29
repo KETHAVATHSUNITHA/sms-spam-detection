@@ -1,0 +1,107 @@
+/* Basic reset */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #6f6262;
+    color: #333;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+a.active {
+    color: #f04e30;
+    font-weight: bold;
+}
+
+/* Spam button */
+.spam-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.spam-button:hover {
+    background-color: #0056b3;
+}
+
+/* About section */
+.about-content {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.illustration {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 20px auto;
+}
+
+.text-content {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.text-content p {
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-content {
+        padding: 15px;
+    }
+
+    .spam-button {
+        margin-right: 10px;
+    }
+}

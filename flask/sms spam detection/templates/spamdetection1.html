@@ -1,0 +1,34 @@
+
+                <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Detection</title>
+    <link rel="stylesheet" href="../static/Images/css/styleS3.css"> 
+</head>
+<body>
+    <header>
+        <h1>Vaagdevi</h1>
+        <p>A ML Web App, Built with Flask</p>
+        <nav>
+            <a href="/spam" class="active">Spam Detection</a>
+        </nav>
+    </header>
+    <center>
+        <main>
+            <section class="spam-detection">
+                <h2><i class="icon-email"></i> Spam <strong>Detection</strong>.</h2>
+                <p>Your Message</p>
+                <!-- Form for user input -->
+                <form action="/predict" method="POST"> 
+                    <textarea name="message" rows="4" cols="50" placeholder="Type your message here..." required></textarea><br><br>
+                    <!-- Predict Button -->
+                    <button type="submit">Predict</button>
+                </form>
+            </section>
+        </main>
+    </center>
+</body>
+</html>
+

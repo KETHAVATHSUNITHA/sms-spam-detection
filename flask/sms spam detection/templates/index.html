@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  SMS Spam Detection  </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #dadddf;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 50px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 24px;
+            color: #333333;
+        }
+        header nav a {
+            margin: 0 15px;
+            color: #f56b70;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        header nav a:hover {
+            color: #333;
+        }
+        .btn-spam {
+            padding: 10px 20px;
+            background-color: #1760b8;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .btn-spam:hover {
+            background-color: #d8e2e5;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            color: #05808b;
+            
+            
+        }
+        .hero-text {
+            max-width: 50%;
+            color:#f56b70
+        }
+        .hero-text h2 {
+            font-size: 48px;
+            color: #333333;
+        }
+        .hero-text h2 span {
+            color: #6bc9f5;
+        }
+        .hero-text p {
+            font-size: 20px;
+            color: #666;
+            margin-top: 20px;
+        }
+        .hero-image {
+            max-width: 40%;
+        }
+        .hero-image img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SmartBridge</h1>
+        <nav>
+             <a href="{{ url_for('home')}}">Home</a>
+            <a href="{{ url_for('about')}}">About</a>
+            <a href="{{ url_for('spamdetection1')}}" class="btn-spam">Spam</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h2>SMS <span>SPAM</span> Detection<br>Using NLP.</h2>
+            
+        </div>
+        <div class="hero-image">
+            <img src="../static/Images/th.jpg" alt="Illustration of SMS spam detection">
+        </div>
+    </section>
+</body>
+</html>

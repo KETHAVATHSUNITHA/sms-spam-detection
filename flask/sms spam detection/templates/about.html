@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="../static/Images/css/style1.css"> <!-- Replace with actual CSS file -->
+</head>
+<body>
+    <nav>
+        
+        <ul>
+
+            <nav>
+                <a href="{{ url_for('home')}}">Home</a>
+               <a href="{{ url_for('about')}}">About</a>
+               <a href="{{ url_for('spamdetection1')}}" class="btn-spam">Spam</a>
+           </nav>
+        </ul>
+        <a href="{{ url_for('spamdetection1')}}" class="btn-spam">Spam</a>
+        <!-- <button href="{{ url_for('spamdetection1')}}" class ="btn-spam">Spam</button> -->
+    </nav>
+    <section class="about-content">
+        <center><img src="../static/Images/img2.jpg" alt="Illustration" class="illustration"></center> 
+        <div class="text-content">
+            <p>Over recent years, as the popularity of mobile phone devices has increased, Short Message Service (SMS) has grown into a multi-billion dollars industry. At the same time, reduction in the cost of messaging services has resulted in growth in unsolicited commercial advertisements (spams) being sent to mobile phones. Due to Spam SMS, Mobile service providers suffer from some sort of financial problems as well as it reduces calling time for users. Unfortunately, if the user accesses such Spam SMS they may face the problem of virus or malware. When SMS arrives at mobile it will disturb mobile user privacy and concentration. It may lead to frustration of user. So Spam SMS is one of the major issues in wireless communication world and it grows day by day.</p>
+            
+            <p>Today most of the SMS's are Spam SMS which consists of Credit Card offer, discount offers, traffic plans, promotions etc. Spam messages include advertisements, free services, promotions, awards, etc. People are using the ubiquity of mobile phone devices is expanding day by day as they give a vast variety of services by reducing the cost of services. To avoid such Spam SMS people use white and black list of numbers. But this technique is not adequate to completely avoid Spam SMS. To tackle this problem it is needful to use a smarter technique which correctly identifies Spam SMS. Natural language processing technique is useful for Spam SMS identification. It analyses text content and find patterns which are used to identify Spam and Non-Spam SMS.</p>
+        
+        </div>
+    </section>
+</body>
+</html>
